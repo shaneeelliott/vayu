@@ -1,0 +1,117 @@
+; Copyright (c) 2006 Eutron
+
+[Version]
+Signature="$Windows 95$"
+Provider=%ProviderName%
+Class=USB
+ClassGuid={36fc9e60-c465-11cf-8056-444553540000}
+; DriverVer Date is mm/dd/yyyy
+DriverVer=12/01/2006,11.6.0.0
+; CatalogFile=eusk3usb.cat
+
+;--------- Disk -----------------------
+
+[SourceDisksNames]
+1 = %DiskDesc%,,,
+
+[SourceDisksFiles]
+eusk3usb.sys = 1
+eusk3usb-amd64.sys = 1
+eusk3usb-ia64.sys = 1
+
+;--------- Files -----------------------
+
+[DestinationDirs]
+DefaultDestDir = 10,System32\Drivers
+main_Files_Driver = 10,System32\Drivers
+
+[main_Files_Driver.x86]
+eusk3usb.sys
+
+[main_Files_Driver.amd64]
+eusk3usb-amd64.sys
+
+[main_Files_Driver.ia64]
+eusk3usb-ia64.sys
+
+;--------- Manufacturer ----------------------------------
+
+[Manufacturer]
+%MfgName%=Mfg0,NTamd64,NTia64
+
+[Mfg0]
+%DeviceDesc3%=main_DDI, USB\VID_073D&PID_0025
+%DeviceDesc2%=main_DDI, USB\VID_073D&PID_0000
+
+[Mfg0.NTamd64]
+%DeviceDesc3%=main_DDI, USB\VID_073D&PID_0025
+%DeviceDesc2%=main_DDI, USB\VID_073D&PID_0000
+
+[Mfg0.NTia64]
+%DeviceDesc3%=main_DDI, USB\VID_073D&PID_0025
+%DeviceDesc2%=main_DDI, USB\VID_073D&PID_0000
+
+[ControlFlags]
+ExcludeFromSelect = USB\VID_073D&PID_0025
+ExcludeFromSelect = USB\VID_073D&PID_0000
+
+; --------- Windows 9X -----------------
+
+[main_DDI]
+CopyFiles=main_Files_Driver.x86
+AddReg=main_9X_AddReg
+
+[main_9X_AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,eusk3usb.sys
+
+; --------- Windows NT -----------------
+
+[main_DDI.NT]
+CopyFiles=main_Files_Driver.x86
+
+[main_DDI.NT.Services]
+AddService = eusk3usb, 0x00000002, main_AddService
+
+[main_AddService]
+DisplayName    = %SvcDesc%
+ServiceType    = 1
+StartType      = 3
+ErrorControl   = 1
+ServiceBinary  = %10%\System32\Drivers\eusk3usb.sys
+
+[main_DDI.NTamd64]
+CopyFiles=main_Files_Driver.amd64
+
+[main_DDI.NTia64]
+CopyFiles=main_Files_Driver.ia64
+
+[main_DDI.NTamd64.Services]
+AddService = eusk3usb, 0x00000002, main_AddService.NTamd64
+
+[main_AddService.NTamd64]
+DisplayName    = %SvcDesc%
+ServiceType    = 1
+StartType      = 3
+ErrorControl   = 1
+ServiceBinary  = %10%\System32\Drivers\eusk3usb-amd64.sys
+
+[main_DDI.NTia64.Services]
+AddService = eusk3usb, 0x00000002, main_AddService.NTia64
+
+[main_AddService.NTia64]
+DisplayName    = %SvcDesc%
+ServiceType    = 1
+StartType      = 3
+ErrorControl   = 1
+ServiceBinary  = %10%\System32\Drivers\eusk3usb-ia64.sys
+
+;--------- Strings ---------------------------------------------------
+
+[Strings]
+ProviderName="Eutron"
+MfgName="Eutron"
+DeviceDesc3="SmartKey 3 USB"
+DeviceDesc2="SmartKey 2 USB"
+SvcDesc="SmartKey 3 USB"
+DiskDesc="Install Disk"

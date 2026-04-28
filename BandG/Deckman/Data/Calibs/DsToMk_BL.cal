@@ -1,0 +1,12 @@
+4 0 0 5 5
+
+constant 1852 *
+variable 143 /
+
+==============================
+for distance in Feet
+constant 6076.115 * 
+variable 160 /
+
+
+variable 143 = var BOAT_M

@@ -1,0 +1,100 @@
+EUTRON
+
+Internet : http://www.smartkey.eutron.it
+Helpdesk email : helpdesk@eutron.it
+Commercial email : info@eutron.it
+Commercial phone : 035697080
+Fax : 035697092
+
+
+SMARTKEY DRIVER INSTALLATION
+----------------------------
+
+Questo pacchetto contiene la libreria per l'installazione automatica dei 
+driver SmartKey. Questa libreria può essere usata per installare i 
+driver SmartKey con la semplice chiamata di una funzione.
+
+
+FILES
+-----
+
+SmartKeyDriversInstaller.exe
+SmartKeyDriversInstaller.msi
+	Installer per una semplice installazione dei driver. Installano 
+	tutti i driver SmartKey: USB, Parallela, GSS e VDD (per 
+	applicativi 16 bit).
+
+Sdi.exe
+Sdiline.exe
+	Semplici applicazioni visuali ed a riga di comando che usano la libreria 
+	di installazione automatica per installare i driver SmartKey.
+
+skeyinst.dll
+	Libreria per l'installazione automatica dei driver.
+
+eugss2k.sys
+eugssnt.sys
+eugssxp.sys
+eusk2par.sys
+eusk2par-amd64.sys
+eusk2par-ia64.sys
+skeyusb.inf
+skeyusb.sys
+skeyusbnt.inf
+skeyusbnt.sys
+skeyvdd.dll
+eusk3usb.inf
+eusk3usb.sys
+eusk3usb.cat
+eusk3usb-amd64.sys
+eusk3usb-ia64.sys
+eusk3usb-uns.inf
+eusk3usb-uns.cat
+euinst-amd64.exe
+euinst-ia64.exe
+usbdrv.inf
+usbdrv.sys
+psapi.dll
+	File necessari per l'installazione dei driver SmartKey che 
+	devono risiedere nella stessa directory della libreria skeyinst.dll.
+	
+skeyinst.chm
+	Documentazione della libreria skeyinst.dll in formato CHM.
+
+skeyinst-nsis.zip
+	Esempio di installazione dei driver per NSIS.
+	Il sito di InstallShield è http://nsis.sourceforge.net/.
+
+skeyinst-msi.zip
+	Esempio di installazione dei driver per WIX.
+	Il sito di WIX è http://wix.sourceforge.net/.
+
+skeyinst-is701.zip
+	Esempio di installazione dei driver per InstallShield 7.01.
+	Il sito di InstallShield è http://www.installshield.com/.
+	
+skeyinst-vb6.bas
+skeyinst-vbnet.bas
+	Interfaccia VisualBasic per l'utilizzo della libreria skeyinst.dll.
+
+skeyinst.h
+skeyinst.lib
+	Interfaccia C per l'utilizzo della libreria skeyinst.dll.
+
+
+FUNZIONALITA'
+-------------
+
+Per ogni driver il tool SDI permette tre differenti operazioni.
+
+* Install
+Installazione o aggiornamento del driver.
+
+* Uninstall
+Rimozione del driver.
+
+* Remove/Forced Uninstall
+Rimozione completa e forzata dei driver per cercare di risolvere situazioni 
+errone di installazione. Questa operazione non deve essere usata in condizioni 
+normali, ma solo per cercare di recuperare situazioni errone.
+Dopo questa operazione è sempre richiesto il reboot del sistema.

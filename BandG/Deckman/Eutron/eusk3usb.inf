@@ -1,0 +1,75 @@
+; Copyright (c) 2004 EUTRON
+
+[Version]
+Signature="$Windows 95$"
+Provider=%ProviderName%
+Class=USB
+ClassGuid={36fc9e60-c465-11cf-8056-444553540000}
+; DriverVer Date is mm/dd/yyyy
+DriverVer=07/01/2005,11.3.5.0
+CatalogFile=eusk3usb.cat
+
+;--------- Disk -----------------------
+
+[SourceDisksNames]
+1 = %DiskDesc%,,,
+
+[SourceDisksFiles]
+eusk3usb.sys = 1
+
+;--------- Files -----------------------
+
+[DestinationDirs]
+DefaultDestDir = 10,System32\Drivers
+main_Files_Driver = 10,System32\Drivers
+
+[main_Files_Driver]
+eusk3usb.sys
+
+;--------- Manufacturer ----------------------------------
+
+[Manufacturer]
+%MfgName%=Mfg0
+
+[Mfg0]
+%DeviceDesc3%=main_DDI, USB\VID_073D&PID_0025
+%DeviceDesc2%=main_DDI, USB\VID_073D&PID_0000
+
+[ControlFlags]
+ExcludeFromSelect = USB\VID_073D&PID_0025
+ExcludeFromSelect = USB\VID_073D&PID_0000
+
+; --------- Windows 9X -----------------
+
+[main_DDI]
+CopyFiles=main_Files_Driver
+AddReg=main_9X_AddReg
+
+[main_9X_AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,eusk3usb.sys
+
+; --------- Windows NT -----------------
+
+[main_DDI.NT]
+CopyFiles=main_Files_Driver
+
+[main_DDI.NT.Services]
+AddService = eusk3usb, 0x00000002, main_AddService
+
+[main_AddService]
+DisplayName    = %SvcDesc%
+ServiceType    = 1
+StartType      = 3
+ErrorControl   = 1
+ServiceBinary  = %10%\System32\Drivers\eusk3usb.sys
+
+;--------- Strings ---------------------------------------------------
+
+[Strings]
+ProviderName="Eutron"
+MfgName="Eutron"
+DeviceDesc3="SmartKey 3 USB"
+DeviceDesc2="SmartKey 2 USB"
+SvcDesc="SmartKey 3 USB"
+DiskDesc="Install Disk"

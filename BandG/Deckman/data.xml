@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<onboarddatadistribution>
+  <values timestamp="2022-05-05 12:05:51">
+    <item var="BSP" val="0.00" />
+    <item var="TWS" val="6.4" />
+    <item var="TWA" val="-124" />
+    <item var="RUDDER" val="-0.5" />
+    <item var="Rake" val="3.0" />
+    <item var="Forestay" val="1.0" />
+    <item var="Deflect" val="84.7" />
+  </values>
+</onboarddatadistribution>

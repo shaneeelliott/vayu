@@ -1,0 +1,9 @@
+Bs_port        C  1  4  2  6.10
+Bs_stbd        C  2  4  2  6.30
+AW_speed       C  3  4  2  1.10
+MHU_angle      C  4  5  1  0.00
+leeway         C  5  4  1  5.00
+TW_corr        C  6  3  1  5.00
+zero_cang      C  7  3  0 180.00
+mx_mtwist      C  8  4  1  0.00
+ang_mxmtw      C  9  3  0  0.00

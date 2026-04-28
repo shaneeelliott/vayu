@@ -1,0 +1,43 @@
+<h1000out>
+  <sentence code="$PBGTTBS,">
+    <output ID="01" dec="1" abs="0" append=",N," name="Polar Speed (knots)">
+      <src> 27 </src>
+    </output>
+    <output ID="02" dec="1" abs="0" append="" name="Polar Performance">
+      <src> 28 </src>
+    </output>
+  </sentence>
+  <sentence code="$PBGTLAY,">
+    <output ID="03" dec="1" abs="0" append=",N," name="Distance to layline">
+      <src> 84 </src>
+    </output>
+    <output ID="04" dec="h" abs="0" append="" name="Time to layline">
+      <src> 85 </src>
+    </output>
+  </sentence>
+  <sentence code="$PBGTVMG,">
+    <output ID="05" dec="1" abs="1" append="," name="Target TWA upwind">
+      <src> 24 </src>
+    </output>
+    <output ID="06" dec="d" abs="0" append="," name="Upwind course on stbd">
+      <src> 86 </src>
+    </output>
+    <output ID="07" dec="d" abs="0" append=",M," name="Upwind course on port">
+      <src> 87 </src>
+    </output>
+    <output ID="08" dec="d" abs="0" append="," name="Downwind course on stbd">
+      <src> 88 </src>
+    </output>
+    <output ID="09" dec="d" abs="0" append=",M" name="Downwind course on port">
+      <src> 89 </src>
+    </output>
+  </sentence>
+  <sentence code="$PBGTSTR,">
+    <output ID="10" dec="1" abs="0" append=",N," name="Distance to start line">
+      <src> 94 </src>
+    </output>
+    <output ID="11" dec="h" abs="0" append=",I" name="Time to start line">
+      <src> 95 </src>
+    </output>
+  </sentence>
+</h1000out>
