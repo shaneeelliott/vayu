@@ -1,0 +1,201 @@
+[variables]
+0   Heel1            Hg1     1    1    0
+1   dotHeel          dHl     1    1    0
+2   Boatspeed        VS      2    0    0
+3   dotVS            dVS     2    0    0
+4   SmoothVS         sVS     2    0    0
+
+5   MHU_A_R          A_R     4    0    0
+6   MHU_A_G          A_G     4    0    0
+7   MHU_A_B          A_B     4    0    0
+8   MW_angle         MWA     1    1    1
+9   MW_speed         MWS     1    1    0
+
+10  AW_angle         AWA     0    1    1
+11  AW_speed         AWS     1    0    0
+12  Leeway           Lee     1    1    0
+13  Heading1         Hd1     0    0    2
+14  Course           Cs      0    0    2
+
+15  dotCourse        dCs     1    0    0
+16  TW_angle         TWA     0    1    1
+17  TW_speed         TWS     1    0    0
+18  TW_dirn          TWD     0    0    2
+19  VMG              VMG     1    1    0
+
+20  GW_speed         GWS     1    0    0
+21  GW_Dirn          GWD     0    0    2
+22  Orig_TWA         TA      0    1    1
+23  Orig_TWS         TS      1    0    0
+24  Orig_TWD         TD      0    0    2
+
+25  MastRot          MRo     1    1    0
+26  TWD_Off          TDo     0    0    1
+27  SelSOG           SOG     2    0    0
+28  SelCOG           COG     0    0    2
+29  VMC              VMC     2    0    0
+
+30  Opt_VMC          OVC     2    0    0
+31  Cse_OVMC         COC     0    0    2
+
+32  Vs_target        Vt      2    0    0
+33  Vs_targ%         Vt%     0    0    0
+34  TWA_targ         WAt     0    1    1
+35  Vs_perf          PPV     2    0    0
+36  Vs_perf%         PP%     0    0    0
+37  Vs_nav           PNV     2    0    0
+38  Vs_nav%          PN%     0    0    0
+
+39  Brg_o_Mrk        BOM     0    0    2
+40  Dst_t_Mrk        DTM     2    0    4
+41  Tm_t_Mrk         TTM     0    0    3
+ 
+42  Curr_Rate        CrR     2    0    0
+43  Curr_Dir         CrD     0    0    2
+44  MCur_Rate        MCR     2    0    0
+45  MCur_Dir         MCD     0    0    2
+46  DCur_Rate        DCR     2    0    0
+47  DCur_Dir         DCD     0    0    2
+
+48  Battery          Bat        0    0    5
+49  Rudder_Port      Rud_Port   1    1    0
+50  Rake             Rake       1    0    0
+
+51  gyro_hl          GHl     1    0    0
+52  gyro_dhl         GdH     2    0    0
+53  gyro_trm         GTm     1    0    0
+54  gyro_dpt         GdP     2    0    0
+55  gyro_hdg         GHg     0    0    2
+56  gyro_dyw         GdY     2    0    0
+
+57  Trim1            Tm1     1    0    0
+58  forestay         frs     2    0    0
+59  Keel             kel     2    0    0
+60  seatemp          sea     1    0    0
+61  airtemp          air     1    0    0
+
+62  Barometer        Bar     0    0    0
+63  port_VS          pVS     2    0    0
+64  stbd_VS          sVS     2    0    0
+65  CMW_angle        CWA     1    1    1
+66  CMW_speed        CWS     1    1    0
+
+67  Depth            Dep     1    0    0
+68  XTrkErr          XTE     2    0    4
+69  TWA_OVMC         AOC     0    1    1
+70  VMG_Targ         VGT     0    0    0
+71  VMG_Targ%        VGP     0    0    0
+
+72  OppTrkW          OTW     0    0    2
+73  OppTrkG          OTG     0    0    2
+74  Log              Log     2    0    4
+75  pitchRMS         PMS     1    0    0
+76  pitchPrd         PPd     1    0    0
+
+77  SelUTC           UTC     1    0    0
+78  SelSVA           SVA     1    0    0
+79  SelQHD           QHD     1    0    0
+
+80  Heading2         Hg2     0    0    2
+81  Heel2            Hl2     1    1    0
+82  Trim2            Tm2     1    0    0
+
+83  Heading3         Hg3     0    0    2
+84  Heel3            Hl3     1    1    0
+85  Trim3            Tm3     1    0    0
+
+86  BoatSpd2         VS2     1    0    0
+87  VS2pad           V2p     2    0    0
+
+88  SelHdg           SHg     1    0    2
+89  SelHeel          SHl     1    1    0
+90  SelTrim          STm     1    0    0
+91  SelBoatSpd       VSS     1    0    0
+
+92  Heave            Hev     1    0    0
+93  GGBrg            GGB     1    0    2
+94  GGRng            GGR     1    0    0
+95  HHDiff           HHD     1    0    1
+
+96  MastWnd          MWM         0    0    0
+97  voltage          AS4         2    0    0
+98  Sea_Temp1        Sea_Temp    1    0    0
+99  ANSp6            AS6         0    0    0
+
+100 gps1cog          cg1     0    0    2
+101 gps1sog          sg1     2    0    0
+102 gps1qhd          qh1     0    0    0
+103 gps1sva          sv1     0    0    0
+104 gps1utc          ut1     0    0    0
+
+105 gps2cog          cg2     0    0    2
+106 gps2sog          sg2     2    0    0
+107 gps2qhd          qh2     0    0    0
+108 gps2sva          sv2     0    0    0
+109 gps2utc          ut2     0    0    0
+
+110 Variation        Var     2    0    1
+111 MOB_Bearing      MOB     0    0    2
+112 MOB_Distance     MOB     2    0    4
+
+113 1_MHU_A_R        A_R     4    0    0
+114 1_MHU_A_G        A_G     4    0    0
+115 1_MHU_A_B        A_B     4    0    0
+116 1_MW_angle       MWA     1    1    1
+117 1_MW_speed       MWS     1    1    0
+
+118 2_MHU_A_R        A_R     4    0    0
+119 2_MHU_A_G        A_G     4    0    0
+120 2_MHU_A_B        A_B     4    0    0
+121 2_MW_angle       MWA     1    1    1
+122 2_MW_speed       MWS     1    1    0
+
+123 HeadingT         HDG_T       0    0    2
+124 CogT             COG_T       0    0    2
+125 TWD_T            TWD_T       0    0    2
+
+126 keel_pressure    Keel_Prs    1    0    0
+127 Rudder_Stbd      Rud_stbd    1    1    0
+
+128 J2               J2_Load     2    0    0
+129 D1_port          D1_Port     2    0    0
+130 D1_stbd          D1_Stbd     2    0    0
+131 J3               J3_Load     2    0    0
+132 V1_stbd          V1_Stbd     2    0    0
+133 V1_port          V1_Port     2    0    0
+134 Bobstay          Bobstay     2    0    0
+135 Runner_Stbd      Run_Stbd    2    0    0
+136 Runner_Port      Run_Port    2    0    0
+137 Mainsheet        Mainsht     2    0    0
+
+138 Targ_Heel        Trg_Heel    1    0    0
+139 Targ_Keel        Trg_Keel    0    0    0
+140 Targ_Dagg        Trg_Dagg    0    0    0
+141 Targ_AWA         Trg_AWA     0    1    1
+142 Targ_AWS         Trg_AWS     1    0    0
+
+143 Toe_In           Toe_In      1    1    0
+144 J1_deflector     Topmast%    0    0    0
+145 J2_deflector     Check__%    0    0    0
+
+146 Engine_Speed     Eng_Spd     0    0    0
+147 Engine_Fuel      Eng_Fuel    1    0    0
+148 Engine_RT        Eng_Hrs     0    0    3
+
+149 Software_Ver     Version     2    0    0
+150 Wave_Height      Wave_Hgt    1    0    0
+151 Wave_Period      Wave_Prd    0    0    0
+
+152 RaceTimer        Timer_MS    0    1    3
+
+153 HydroWatts       Hydro_W     1    0    0
+154 Alt_Kw           Alt_Kw      1    0    0
+155 TotalPowerOut    TotPowOt    1    0    0
+
+156 HydroInLog       Hydro_In    1    0    0
+157 AlternatorInLog  Alt_In      1    0    0
+158 PowerOutLog      Pow_Out     1    0    0
+159 FuelUsedLog      Fuel_Log    1    0    0  
+
+======================================================
+number, long name, short name, decimals, abs val, type
