@@ -1,0 +1,15 @@
+<SilvaNmeaOut>
+  <sentence code="$PSILTBS,">
+    <output ID="01" dec="1" abs="0" append=",N" name="Target Speed (knots)">
+      <src> 22 </src>
+    </output>
+  </sentence>
+  <sentence code="$PSILCD1,">
+    <output ID="02" dec="0" abs="0" append="," name="Circular 0-360">
+      <src>  7 </src>
+    </output>
+    <output ID="03" dec="1" abs="0" append="" name="Ordinary data">
+      <src>  9 </src>
+    </output>
+  </sentence>
+</SilvaNmeaOut>

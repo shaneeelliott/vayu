@@ -1,0 +1,6 @@
+15  0.2  0.001
+
+==================================================
+15 period filter type
+0.2   damping on timing
+0.001 - 100 sec damping on underlying variable

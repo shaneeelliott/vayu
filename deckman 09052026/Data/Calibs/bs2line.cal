@@ -1,0 +1,24 @@
+4 0 0 1 15.8496
+
+Variable 106 /
+constant 0.5144 /
+
+=================
+Line 1 - convert boat lengts to M
+Line 2 - divide by Timer
+Line 3 - convert M/sec to Knts
+
+======================
+Boat Length in Meters set in Deckman
+
+
+ 42FT = 12.8016 
+ 52FT = 15.8496
+ 60FT = 18.2880
+ 70FT = 21.3360
+ 72FT = 21.9456
+100FT = 30.4800
+110FT = 33.5280
+115FT = 35.0520
+130FT = 39.6240
+140FT = 

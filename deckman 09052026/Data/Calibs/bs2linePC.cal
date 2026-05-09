@@ -1,0 +1,7 @@
+4  0 0 1 1
+
+variable 22 /
+constant 100 *
+
+========================
+CONST 0.0001 + vS_TARG / CONST 100*

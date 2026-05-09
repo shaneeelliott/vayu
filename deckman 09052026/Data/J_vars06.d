@@ -1,0 +1,544 @@
+[variables]
+ 0 Heel             Hl      1    1    0
+ 1 Boatspeed        VS      2    0    0
+ 2 AW_angle         AA      0    1    1
+ 3 AW_speed         AS      1    0    0
+ 4 Leeway           Le      1    0    0
+
+ 5 Course           Cs      0    0    2
+ 6 Heading          Hd      0    0    2
+ 7 TWD              TWD      0    0    2
+ 8 TWA         TWA      0    1    1
+ 9 TWS              TS      1    0    0
+
+10 GW_Dirn          GWD     0    0    2
+11 GW_speed         GWS     1    0    0
+
+12 Orig_TWS         ts      1    0    0
+13 Orig_TWA         ta      0    1    1
+14 Orig_TWD         td      0    0    2
+15 TWD_Off          wdo     0    0    1
+
+16 VMG              VG      1    1    0
+
+17 Ext_SOG          SOG     2    0    0
+18 Ext_COG          COG     0    0    2
+19 Ext_VMC          VMC     2    0    0
+20 Opt_VMC          OVC     2    0    0
+21 Cse_OVMC         COC     0    0    2
+
+22 Vs_target        TS      2    0    0
+23 Vs_targ%         T%      0    0    0
+24 TWA_targ         AT      0    1    1
+25 Vs_perf          PPV     2    0    0
+26 Vs_perf%         PP%     0    0    0
+
+27 Vs_nav           PNV     2    0    0
+28 Vs_nav%          PN%     0    0    0
+29 Brg_o_Mrk        BM      0    0    2
+30 Dst_t_Mrk        DM      2    0    4
+31 Tm_t_Mrk         TM      0    0    3
+
+32 Curr_Rate        CrR     2    0    0
+33 Curr_Dir         CrD     0    0    2
+34 MCur_Rate        MCR     2    0    0
+35 MCur_Dir         MCD     0    0    2
+36 DCur_Rate        DCR     2    0    0
+37 DCur_Dir         DCD     0    0    2
+38 LCur_Rate        LCR     2    0    0
+39 LCur_Dir         LCD     0    0    2
+
+40 ManOvrBrg        MOB     0    0    2
+41 ManOvrRng        MOR     3    0    4
+
+42 O_Heel           OHl     1    1    0
+43 O_Boatspd        OVS     2    0    0
+44 O_Course         OCs     0    0    2
+45 O_TWD            OTD     0    0    2
+46 O_TWA            OTA     0    1    1
+47 O_TWS            OTS     1    0    0
+
+48 Hl-OHl           DHl     1    0    0
+49 VS-OVS           DVS     2    0    0
+50 Cse-OCse         DCs     0    0    1
+51 TWD-OTWD         DTD     0    0    1
+52 TWA-OTWA         DTA     0    0    1
+53 TWS-OTWS         DTS     1    0    0
+
+54 OBRng            OBR     0    0    0
+55 OBBrg            OBB     0    0    2
+56 OBRngW           ORW     0    0    0
+57 OBRngM           ORM     0    0    0
+58 OBGMW            OGW     1    0    0
+59 OBGMM            OGM     1    0    0
+60 OBDMC            ODC     1    0    0
+61 OBDMOC           ODO     1    0    0
+
+62 Depth            Dep     1    0    0
+
+63 DST_STRB         DOS     2    0    4
+64 TM_STRB          TOS     0    0    3
+65 DST_PORT         DOP     2    0    4
+66 TM_PORT          TOP     0    0    3
+
+67 GGAUTC           UTC     1    0    0
+68 GGASVA           SVA     1    0    0
+69 GGAQHD           QHD     1    0    0
+
+70 S_APortDn        APD     0    0    3
+71 S_APortUp        APU     0    0    3
+72 S_AStbdDn        ASD     0    0    3
+73 S_AStbdUp        ASU     0    0    3
+
+74 AveCse           ACs     0    0    2
+75 AveTWD           ATD     0    0    2
+76 AveTWS           ATS     1    0    0
+77 AveNav%          AN%     0    0    0
+
+78 O_AWA            OAA     0    1    1
+79 O_AWS            OAS     1    0    0
+
+80 MA_TWD           MWD     0    0    2
+81 MA_TWS           MWS     1    0    0
+82 MA_VS            MVS     2    0    0
+83 MA_VSNP          MVP     1    0    0
+
+84 DST_LAYL         DTL     1    0    4
+85 TM_LAYL          TTL     0    0    3
+86 UP_CSTRB         UCS     0    0    2
+87 UP_CPORT         UCP     0    0    2
+88 DN_CSTRB         DCS     0    0    2
+89 DN_CPORT         DCP     0    0    2
+90 UP_LSTBD         ULS     0    0    2
+91 UP_LPORT         ULP     0    0    2
+92 DN_LSTBD         DLS     0    0    2
+93 DN_LPORT         DLP     0    0    2
+94 DST_LINE         DSL     1    0    4
+95 TM_LINE          TSL     0    0    3
+
+96 AWA_TARG         AAT     0    1    1
+
+97 TM_PEND          TPE     0    0    3
+98 DST_PEND         DPE     0    0    4
+99 TM_SEND          TSE     0    0    3
+100 DST_SEND        DSE     0    0    4
+101 TM_LINEP        TLP     0    0    3
+102 DSTLINEP        DLP     0    0    4
+103 TM_LINES        TLS     0    0    3
+104 DSTLINES        DLS     0    0    4
+105 VERTDIST        VDL     0    0    4
+106 TIMER           TMR     0    0    3
+107 STR_LEFT        SLL     0    0    2
+108 STR_RIGHT       SRL     0    0    2
+109 LINEWIND        LWD     0    0    2
+110 BIASGAIN        BSG     2    0    0
+111 BIASANG         BSA     0    0    1
+
+112 Rudder          RUD     3    1    0
+113 Deflect         Def     0    0    0
+114 Rake            RKE     2    0    1
+115 Forestay        FSY     1    0    1
+116 HeelRate        hrt     1    0    1
+117 PitchRate       prt     1    0    1
+118 YawRate         yrt     1    0    1
+119 V1Stbd          V1s     3    0    1
+120 V1Port          V1p     3    0    1
+
+121 Hdg1            Hd1     0    0    2
+122 Heel1           Hl1     1    1    0
+123 Trim1           Tr1     1    1    0
+124 Hdg2            Hd2     0    0    2
+125 Heel2           Hl2     1    1    0
+126 Trim2           Tr2     1    1    0
+127 Hdg3            Hd3     0    0    2
+128 Heel3           Hl3     1    1    0
+129 Trim3           Tr3     1    1    0
+
+130 WtpMagDec       MgD     1    0    0
+131 Wtp3oppTk       OpK     0    0    2
+132 VmgPerc         VgP     1    0    0
+133 Trim            Trm     1    0    0
+
+134 MWA             mwa     1    1    1
+135 MWS             mws     1    0    0
+
+136 MHU_R           mhr     4    0    0
+137 MHU_G           mhg     4    0    0
+138 MHU_B           mhb     4    0    0
+
+139 YawR            ywr     2    0    0
+140 PitchR          pir     2    0    0
+141 RollR           rlr     2    0    0
+
+142 d_Heading       dHd     1    0    1
+
+143 Boat_M          BtM     0    0    0
+144 DsToMk_BL       dBL     0    0    0
+145 DsToMk_M        DtM     0    0    0
+
+146 Shear           shr     0    0    1
+
+147 OT_Course       OTC     0    0    2
+148 TOT_Course      TOC     0    0    2
+149 OT_COG          OTG     0    0    2
+150 TOT_COG         TOG     0    0    2
+151 OT_TWD          OTD     0    0    2
+152 TOT_TWD         TOD     0    0    2
+
+153 MagicTWD        mTD     0    0    2
+154 XwindL          xwL     0    0    2
+155 XwindR          xwR     0    0    2
+156 TWA2MK          W2M     0    1    1
+
+157 TWA_1m          A1      0    1    1
+158 TWA_5m          A5      0    1    1
+159 TWD_1m          D1      0    0    2
+160 TWD_5m          D5      0    0    2
+161 TWS_1m          S1      1    0    0
+162 TWS_5m          S5      1    0    0
+
+163 Bs2Line         bsL     1    0    0
+164 Bs2Pend         bsP     1    0    0
+165 Bs2Send         bsS     1    0    0
+166 Bs2LN%t         tl%     0    0    0
+167 BL2LL           bLL     0    0    0
+168 deltaBSP        dbs     2    0    0
+169 deltaBSP%       db%     2    0    0
+
+170 TimerS          tms     0    0    3
+171 WTP_ver         WTP     2    0    0
+172 MastTw          mst     1    0    0
+173 TwistC          twC     1    0    0
+174 tHeel           thl     0    0    0
+
+175 Bs2LineP        bLp     1    0    0
+176 Seatemp         stp     1    0    0
+177 FSTY_LB         fsp     1    0    0
+178 Main            man     1    0    0
+179 Rudder30s       r30     2    1    0
+
+180 wtp_b2mk        w39     0    0    2  
+181 wtp_d2mk        w40     2    0    4       
+182 wtp_tm2mk       w41     3    0    0
+183 wtp_ttwa        w34     0    1    1
+184 wtp_tbsp        w32     2    0    0
+185 wtp_pbsp        w35     2    0    0
+186 wtp_twa         w16     0    1    1
+187 wtp_twd         w18     0    0    2
+188 wtp_tmP         180     2    0    0   
+189 wtp_tmS         181     2    0    0
+
+190 JibTack         190     1    0    0
+191 TTB_Port        tbp     0    0    3
+192 TTB_Stbd        tbs     0    0    3
+193 TTB_Pin         tbP     0    0    3
+194 TTB_CB          tbC     0    0    3
+195 TTB_Line        tbL     0    0    3
+
+196 BSPsq           sp1     2    0    0
+197 CalcK           sp2     0    1    1
+198 Spare3          sp3     0    0    2
+199 Spare4          sp4     0    0    2
+200 Spare5          sp5     0    0    1
+201 Spare6          sp6     0    0    1 
+202 UTChhmm         Utc     0    0    3
+203 trimd           trd     1    0    0
+204 GRM_TWD         GTW     0    0    0
+
+205 Timer-1         t-1     0    0    3
+206 5mShift         5mS     0    0    1
+207 UpCP_d          uPd     0    0    2
+208 UpCS_d          uPs     0    0    2
+209 DnCP_d          dPd     0    0    2
+210 DnCS_d          dSd     0    0    2
+211 UpCP_TWD        uPd     0    0    2
+212 UpCS_TWD        uPs     0    0    2
+213 DnCP_TWD        dPd     0    0    2
+214 DnCS_TWD        dSd     0    0    2
+
+215 MyLeeway        mLw     1    1    0
+216 SelCurr         sCu     0    0    0
+217 UpK             UpK     1    0    0
+218 DnK             DnK     1    0    0
+219 JibTackRat      JTR     0    0    0
+
+220 FrothFac        FrF     0    0    0
+221 Grm_Tws         JTR     1    0    0
+223 LeewaySe        LwS     1    0    0
+
+[UserVariables]
+80    7  null.cal      MA_TWD.fil
+81    9  null.cal      MA_TWS.fil
+82    1  null.cal      MA_VS.fil
+83   28  null.cal      MA_VSNP.fil
+142   6 deltahd.cal    null.fil
+143   5 boat_m.cal     null.fil
+144  30 DsToMk_BL.cal  null.fi
+145  30 DsToMk_m.cal   null.fil
+146   8 shear.cal      null.fil
+147   5 Oppt.cal       null.fil
+148   5 Targ_OppT.cal  null.fil
+149  18 Oppt.cal       null.fil
+150  18 Targ_OppT.cal  null.fil
+151   7 addtwa.cal     null.fil
+152   7 addtargtwa.cal null.fil
+153   5 magtwd.cal     null.fil 
+154 153 xwind-.cal     null.fil
+155 153 xwind+.cal     null.fil   
+156  29 twa2mk.cal     null.fil
+157   8 null.cal       1min.fil
+158   8 null.cal       5min.fil
+159   7 null.cal       360_1min.fil
+160   7 null.cal       360_5min.fil 
+161   9 null.cal       1min.fil
+162   9 null.cal       5min.fil 
+163 104 bs2line.cal    null.fil
+164  98 bs2line.cal    null.fil
+165 100 bs2line.cal    null.fil
+166 165 bs2linePC.cal  null.fil
+167  84 DsToMk_BL.cal  null.fil
+168   1 dbsp.cal       bsp.fil
+169   1 dbsp%.cal      bsp.fil
+170 205 tms.cal        null.fil
+175 102 bs2line.cal    null.fil
+177 115 lb.cal         null.fil
+179 112 null.cal       30sec.fil
+191 101 timer.cal      null.fil
+192 103 timer.cal      null.fil
+193  97 timer.cal      null.fil
+194  99 timer.cal      null.fil
+195  95 timer.cal      null.fil 
+196   1 bspsq.cal      null.fil 
+197 142 CalcK.cal      3min.fil
+202  67 null.cal       null.fil
+203 129 null.cal       trim.fil
+205 106 tms-1.cal      null.fil
+206   7 -twd5.cal      null.fil
+207  29 -UpCPORT.cal   null.fil
+208  29 -UpCSTBD.cal   null.fil
+209  29 -DnCPORT.cal   null.fil
+210  29 -DnCSTBD.cal   null.fil
+211 207 +twd.cal       360_10sec.fil
+212 208 +twd.cal       360_10sec.fil
+213 209 +twd.cal       360_10sec.fil
+214 210 +twd.cal       360_10sec.fil
+
+
+
+[StartVariables]
+VarTPE 97
+VarDPE 98
+VarTSE 99
+VarDSE 100
+VarTLP 101
+VarDLP 102
+VarTLS 103
+VarDLS 104
+VarVDL 105
+VarTmr 106
+VarSLL 107
+VarSRL 108
+VarLWD 109
+VarBsG 110
+VarBsA 111
+
+
+[newvars]
+GGAUTC     67
+GGASVA     68
+GGAQHD     69
+S_APortDn  70
+S_APortUp  71
+S_AStbdDn  72
+S_AStbdUp  73
+DST_LAYL   84
+TM_LAYL    85
+UP_CSTRB   86
+UP_CPORT   87
+DN_CSTRB   88
+DN_CPORT   89
+UP_LSTBD   90
+UP_LPORT   91
+DN_LSTBD   92
+DN_LPORT   93
+DST_LINE   94
+TM_LINE    95
+AWA_TARG   96
+
+
+[2boattelem]
+78  2
+79  3
+
+[averages]
+74  5
+75  7
+76  9
+77 28
+
+
+[datalog]
+ 0   0    0.0   30.0
+ 1   1    0.0   12.0
+ 2   2    0.0  180.0
+ 3   3    0.0   20.0
+ 4   4    0.0    6.0
+
+ 5   5    0.0  360.0
+ 6  12    0.0   20.0
+ 7  13    0.0  180.0
+ 8   7    0.0  360.0
+ 9   8    0.0  180.0
+
+10   9    0.0   20.0
+11  15  -20.0   20.0
+12  17    0.0   12.0
+13  18    0.0  360.0
+14  22    0.0   12.0
+
+15  27    0.0   12.0
+16  23   90.0  110.0
+17  28   90.0  110.0
+18  34    0.0   10.0
+19  35    0.0  360.0
+
+20  62    0.0   50.0
+21  112    0.0   50.0
+22  113    0.0   50.0
+23  114    0.0   50.0
+24  115    0.0   50.0
+25  116   -50.0 50.0
+26  117   -50.0 50.0
+27  118   -50.0 50.0
+28  119    0.0   50.0
+29  120    0.0   50.0
+30    6    0.0  360.0
+31  121    0.0  360.0
+32  122   -50.0 50.0
+33  123   -50.0 50.0
+34  124    0.0  360.0
+35  125   -50.0 50.0
+36  126   -50.0 50.0
+37  127    0.0  360.0
+38  128   -50.0 50.0
+39  129   -50.0 50.0
+40  130  -180.0  180.0
+41  131    0.0  360.0
+42  132    0.0  200.0
+43  133   -50.0 50.0
+44 134 -180.0  180.0
+45 135    0.0   40.0
+46 136    0.0    5.0
+47 137    0.0    5.0
+48 138    0.0    5.0
+49 139 -180.0  180.0
+50 140 -180.0  180.0
+51 141 -180.0  180.0
+52  16    0.0   20.0
+
+
+
+[b&g]
+
+[H3000]
+   
+
+[ockam]
+
+
+[ockgps]
+             
+
+[magnum]
+
+
+[nmea]
+
+
+[wtp]
+89   0
+55   6
+67  62
+
+91   1
+10   2
+11   3
+22  13
+23  12
+
+24  14
+16   8
+17   9
+18   7
+14   5
+19  16
+
+12   4
+28  18
+27  17
+
+77  67
+78  68
+79  69
+170 112
+160 113
+166 114
+58  115
+52  116
+54  117
+56  118
+167  119
+168  120
+
+65  134
+66  135
+5   136
+6   137
+7   138
+56  139
+54  140
+52  141
+171 149
+
+13 121
+0 122
+57 123
+80 124
+81 125
+82 126
+83 127
+84 128
+85 129
+110 130
+72 131
+71 132
+90 133
+175 172
+176 173
+161 174
+60  176
+179 178
+
+39 180
+40 181   
+41 182
+34 183
+32 184
+35 185
+180 188
+181 189
+184 190
+187 204
+
+197 215
+194 216
+195 217
+196 218
+197 219
+198 220
+199 221
+200 222
+
+[instruments]
+simul                     9600 none    8    1
+

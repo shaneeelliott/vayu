@@ -1,0 +1,45 @@
+<NKENmeaOut>
+  <sentence code="$PNKEP,01,">
+    <output ID="01" dec="1" abs="0" append=",N,," name="VIT_CIBLE">
+      <src> 22 </src>
+    </output>
+  </sentence>
+  <sentence code="$PNKEP,02,">
+    <output ID="02" dec="1" abs="0" append="" name="CAP_AUTRE_BORD">
+      <src> 84 </src>
+    </output>
+  </sentence>
+  <sentence code="$PNKEP,03,">
+    <output ID="03" dec="1" abs="1" append="," name="ANGLE_OPT_VENT">
+      <src> 7 </src>
+    </output>
+    <output ID="04" dec="1" abs="0" append="," name="REND_PRES">
+      <src> 23 </src>
+    </output>
+    <output ID="05" dec="1" abs="0" append="" name="REND_POLAIRE">
+      <src> 28 </src>
+    </output>
+  </sentence>
+  <sentence code="$PNKEP,04,">
+    <output ID="06" dec="1" abs="0" append="," name="ANGLE_OPT_CMG">
+      <src> 21 </src>
+    </output>
+    <output ID="07" dec="1" abs="0" append="," name="GAIN_ROUTE_CMG">
+      <src> 30 </src>
+    </output>
+    <output ID="08" dec="1" abs="0" append="," name="ANGLE_OPT_VMG">
+      <src> 28 </src>
+    </output>
+    <output ID="09" dec="1" abs="0" append="" name="GAIN_ROUTE_VMG">
+      <src> 30 </src>
+    </output>
+  </sentence>
+  <sentence code="$PNKEP,05,">
+    <output ID="10" dec="1" abs="0" append="," name="DIREC_COURANT">
+      <src> 35 </src>
+    </output>
+    <output ID="11" dec="1" abs="0" append=",N,,K" name="VITES_COURANT">
+      <src> 34 </src>
+    </output>
+  </sentence>
+</NKENmeaOut>

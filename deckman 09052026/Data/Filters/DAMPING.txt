@@ -1,0 +1,13 @@
+MA_TWD    D 80 4 0
+MA_TWS    D 81 4 0
+MA_VS     D 82 4 0
+MA_VSNP   D 83 4 0
+
+==========================================
+Parameters:
+
+1: name (appears on Deckman)
+2: code (D for damping)
+3: variate number in main list (j_vars03.d)
+4: width of display field in chars
+5: number of decimal places
